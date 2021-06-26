@@ -13,8 +13,8 @@ protocol MainInteractorProtocol: AnyObject {
 
 class MainInteractor: MainInteractorProtocol {
     
-    let network: NetworkServiceProtocol = NetworkService()
-    let storage: StorageServiceProtocol = StorageService()
+    private let network: NetworkServiceProtocol = NetworkService()
+    private let storage: StorageServiceProtocol = StorageService()
     
     weak var presenter: MainPresenterProtocol?
     

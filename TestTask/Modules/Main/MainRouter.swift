@@ -26,8 +26,8 @@ class MainRouter: MainRouterProtocol {
     
     func showDetail(about launch: Launch) {
         let detailView = DetailModule.configure(launch: launch)
-        // Вариант с иным вызовом
-        //controller?.present(detailView, animated: true, completion: nil)
         controller?.show(detailView, sender: nil)
+        // Еще вариант
+        //controller?.present(detailView, animated: true, completion: nil)
     }
 }

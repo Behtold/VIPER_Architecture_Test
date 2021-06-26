@@ -16,7 +16,7 @@ class DetailPresenter: DetailPresenterProtocol {
     var interactor: DetailInteractorProtocol?
     var router: DetailRouterProtocol?
     
-    var launch: Launch
+    private var launch: Launch
     
     required init(for view: DetailViewProtocol, launch: Launch) {
         self.launch = launch

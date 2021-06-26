@@ -36,7 +36,6 @@ class MainPresenter: MainPresenterProtocol {
     
     required init(for view: MainViewProtocol) {
         self.view = view
-        // self.launchesTable = view.launchTable // Вынес в MainModule
     }
     
     func viewDidLoad() {

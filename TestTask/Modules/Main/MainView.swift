@@ -54,8 +54,9 @@ class MainView: UIViewController, MainViewProtocol  {
 extension MainView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(indexPath.row)")
-        presenter?.selectLaunchById(launchesTable.launches[indexPath.row].id)
+        presenter?.selectLaunchById(
+            launchesTable.launches[indexPath.row].id
+        )
     }
 }
 
