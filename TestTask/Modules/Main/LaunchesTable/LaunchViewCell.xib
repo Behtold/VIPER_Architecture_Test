@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="LaunchViewCell" customModule="TestTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRo-XE-dSh">
+                        <rect key="frame" x="8" y="30" width="0.0" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="bRo-XE-dSh" secondAttribute="height" multiplier="1:1" id="WSB-ov-Ert"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahb-kd-oST">
+                        <rect key="frame" x="16" y="16" width="296" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edM-PA-sg1">
+                        <rect key="frame" x="16" y="8" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bRo-XE-dSh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2Fj-e2-e7s"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bRo-XE-dSh" secondAttribute="bottom" constant="8" id="9ID-Da-mZo"/>
+                    <constraint firstItem="Ahb-kd-oST" firstAttribute="top" secondItem="edM-PA-sg1" secondAttribute="bottom" constant="8" id="INP-Js-PEq"/>
+                    <constraint firstAttribute="trailing" secondItem="Ahb-kd-oST" secondAttribute="trailing" constant="8" id="LOn-vo-82w"/>
+                    <constraint firstItem="edM-PA-sg1" firstAttribute="leading" secondItem="bRo-XE-dSh" secondAttribute="trailing" constant="8" id="SNW-Dg-uUD"/>
+                    <constraint firstItem="bRo-XE-dSh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Sv3-iG-nTR"/>
+                    <constraint firstItem="Ahb-kd-oST" firstAttribute="leading" secondItem="edM-PA-sg1" secondAttribute="leading" id="cFc-nK-Sai"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ahb-kd-oST" secondAttribute="bottom" constant="8" id="e6G-MN-gRE"/>
+                    <constraint firstItem="edM-PA-sg1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="kvq-oq-sCi"/>
+                    <constraint firstItem="bRo-XE-dSh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sfa-3Z-1jA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="details" destination="Ahb-kd-oST" id="IBk-Px-ePb"/>
+                <outlet property="name" destination="edM-PA-sg1" id="aOR-fh-jUq"/>
+                <outlet property="success" destination="bRo-XE-dSh" id="C1S-EQ-Rnv"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="115.17857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
