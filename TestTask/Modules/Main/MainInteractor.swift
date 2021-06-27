@@ -28,7 +28,7 @@ class MainInteractor: MainInteractorProtocol {
             network.getAllLauncher { launches, error in
                 self.presenter?.showLoadIndicator(false)
                 if let error = error {
-                    self.presenter?.showAlert(title: "", message: error)
+                    self.presenter?.showAlert(title: "", message: error.localizedDescription)
                 }
                 if let launches = launches {
                     self.storage.saveLaunches(launches) {

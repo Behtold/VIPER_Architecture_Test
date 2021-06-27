@@ -22,9 +22,7 @@ class Launch: Decodable {
         // Для теста решил не заморачиваться с оригинальным id, номер запуска, по идее, тоже уникален
         case id = "flight_number"
         case name
-        // Дата в формате UTC (кончается на 0Z) не декодируется дефолтным декодером .iso8601
-        // без дополнительных опций, поэтому взял со сдвигом по часовому поясу
-        case date = "date_local"
+        case date = "date_utc"
         case details
         case success
     }
