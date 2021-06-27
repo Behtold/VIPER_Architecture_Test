@@ -23,28 +23,26 @@ class TestNetworkService: XCTestCase {
     
     func testEmptyData() throws {
         XCTAssertNoThrow(
-            self.launches = try NetworkService.decodeWithISO8601(self.emptyData)
+            self.launches = try self.emptyData?.decodeWithISO8601()
         )
+        XCTAssertNotNil(launches)
     }
     func testInvalidData() throws {
         XCTAssertThrowsError(
-            self.launches = try NetworkService.decodeWithISO8601(self.invalidData)
+            self.launches = try self.invalidData?.decodeWithISO8601()
         )
-        
-        
     }
     func testDateUTC() throws {
         XCTAssertNoThrow(
-            self.launches = try NetworkService.decodeWithISO8601(self.dateUTC)
+            self.launches = try self.dateUTC?.decodeWithISO8601()
         )
         let launch = launches?.first
         XCTAssertNotNil(launch)
         XCTAssertNotNil(launch?.date)
-        
     }
     func testValidData() throws {
         XCTAssertNoThrow(
-            self.launches = try NetworkService.decodeWithISO8601(self.validFullData)
+            self.launches = try self.validFullData?.decodeWithISO8601()
         )
         let launch = launches?.first
         XCTAssertNotNil(launch)
